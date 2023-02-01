@@ -9,8 +9,8 @@ export interface Props {
 const { href, title, image, body } = Astro.props;
 ---
 
-<a href={href} class="w-full flex flex-col bg-white rounded shadow-md p-4">
-    <img src={image}/>
+<a href={href} class="w-full flex flex-col bg-white rounded shadow-md p-4 gap-2 hover:shadow-lg hover:bg-slate-200 transition-colors hover:-translate-y-[3px]">
+    <img src={image} class="rounded"/>
 	<h2>
 		{title}
 	<span>&rarr;</span>

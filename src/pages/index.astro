@@ -2,20 +2,26 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import PhotoWithCap from '../components/PhotoWithCap.astro';
+import Kids from '../Images/Kids.png';
+import HummingBird from '../Images/HummingBird.png';
+import Sky from '../Images/Sky.png';
 ---
 
 <Layout title="Kerry Townley-Smith">
 	<main>
 		<h1 class="mx-auto text-center">Welcome <span class="text-gradient">Kerry!</span></h1>
 		<div class="w-full flex flex-row gap-4">
-			<div class="w-1/3 flex flex-col">
-				<PhotoWithCap href="/post" title="Lorem Ipsum" image="data://" body="Lorem Ipsum Delendis Et Quod Era Sum veni vidi vici"/>
+			<div class="w-1/4 flex flex-col gap-4">
+				<PhotoWithCap href="/post" title="Time Capsule" image={Kids} body="A relic last used at Isabelle's middle school graduation."/>
+				<PhotoWithCap href="/post" title="Time Capsule" image={Kids} body="A relic last used at Isabelle's middle school graduation."/>
 			</div>
-			<div class="w-1/3flex flex-col pt-10">
-				<PhotoWithCap href="/post" title="Lorem Ipsum" image="data://" body="Lorem Ipsum Delendis Et Quod Era Sum veni vidi vici"/>
+			<div class="w-1/2 flex flex-col pt-10 gap-4">
+				<PhotoWithCap href="/post" title="HummingBird" image={HummingBird} body="A hummingbird in his usual habitat."/>
+				<PhotoWithCap href="/post" title="HummingBird" image={HummingBird} body="A hummingbird in his usual habitat."/>
 			</div>
-			<div class="w-1/3 flex flex-col">
-				<PhotoWithCap href="/post" title="Lorem Ipsum" image="data://" body="Lorem Ipsum Delendis Et Quod Era Sum veni vidi vici"/>
+			<div class="w-1/4 flex flex-col gap-4">
+				<PhotoWithCap href="/post" title="Today In Wood Canyon" image={Sky} body="My daily canyon observations"/>
+				<PhotoWithCap href="/post" title="Today In Wood Canyon" image={Sky} body="My daily canyon observations"/>
 			</div></div>
 	</main>
 </Layout>
